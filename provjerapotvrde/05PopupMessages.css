@@ -1,0 +1,13 @@
+﻿/* POPUP MESSAGES
+----------------------------------------------------------*/
+div.pm-wrapper { padding: 0; position: fixed; top: 2.4rem; right: 0.2rem; z-index: 301; width: 20rem; }
+    div.pm-wrapper > div.pm-message-container { }
+    div.pm-wrapper > div.close-all { background: #000000; background: rgba(0,0,0,0.95); border: 1px solid #909090; color: #ffffff; cursor: pointer; font-weight: bold; display: none; margin: 0 auto; padding: 0.2rem; text-align: center; }
+    div.pm-wrapper > div.pm-message-container > div.pm-message-wrapper { border: 0px solid #909090; margin-bottom: 0.2rem; }
+        div.pm-wrapper > div.pm-message-container > div.pm-message-wrapper > div.pm-indicator { padding: 1px 1px 1px 50px; }
+        div.pm-wrapper > div.pm-message-container > div.pm-message-wrapper > div.pm-indicator-information { background-color: blue; }
+        div.pm-wrapper > div.pm-message-container > div.pm-message-wrapper > div.pm-indicator-error { background-color: red; }
+        div.pm-wrapper > div.pm-message-container > div.pm-message-wrapper > div.pm-indicator-success { background-color: green; }
+        div.pm-wrapper > div.pm-message-container > div.pm-message-wrapper > div.pm-indicator-warning { background-color: darkorange; }
+        div.pm-wrapper > div.pm-message-container > div.pm-message-wrapper > div.pm-indicator > div.pm-message { padding: 1rem 2rem 1rem 1rem; text-align: center; background: #ffffff; position: relative; }
+            div.pm-wrapper > div.pm-message-container > div.pm-message-wrapper > div.pm-indicator > div.pm-message > div.pm-close { position: absolute; top: 50%; margin-top: -8px; right: 0.5rem; }

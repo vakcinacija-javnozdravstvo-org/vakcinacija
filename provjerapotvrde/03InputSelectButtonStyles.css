@@ -1,0 +1,63 @@
+﻿/*************** INPUT FIELDS, SELECTS & BUTTONS **********/
+textarea, input, button, select { font-family: inherit; }
+
+    input[type=text], input[type=password], textarea, select, input[type=email],
+    input[type=datetime], input[type=date], input[type=number], input[type=file] { background: #ffffff; border: 0; border-bottom: 0.2rem solid #bbbbbb; display: block; font-size: 1.2rem; line-height: normal; margin: 0; padding: 0.4rem; width: 100%; box-shadow: inset 0 0 0px rgba(0,0,0,.15); outline: medium none; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; transition: all 0.3s ease 0s; }
+        input[type=text]:hover, input[type=password]:hover, textarea:hover, select:hover, input[type=email]:hover,
+        input[type=datetime]:hover, input[type=date]:hover, input[type=number]:hover, input[type=file]:hover { border-bottom: 0.2rem solid #999999; }
+select { padding: 0.34rem 0.4rem; }
+
+    input[type=text].inline, input[type=password].inline, textarea.inline, select.inline, input[type=email].inline,
+    input[type=datetime].inline, input[type=date].inline, input[type=number].inline, input[type=file].inline { display: inline !important; }
+
+    input[type=text].inline-block, input[type=password].inline-block, textarea.inline-block, select.inline-block, input[type=email].inline-block,
+    input[type=datetime].inline-block, input[type=date].inline-block, input[type=number].inline-block, input[type=file].inline-block { display: inline-block !important; }
+
+    input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus, input[type=email].focus,
+    input[type=datetime]:focus, input[type=date]:focus, input[type=number]:focus, input[type=file].focus { border-bottom: 0.2rem solid #d14836; color: #d14836; /*padding-bottom: 0.3rem;*/ }
+        /*select:focus { padding-bottom: 0.24rem; }*/
+        select:focus::-ms-value { background: white; color: #d14836; }
+/*IE/EDGE hack for selected items*/
+/*background-color:#fff;color:#444;border:1px  solid #4d90fe;box-shadow:0px 0px 3px #4d90fe;outline:none;}*/
+
+input[type=text].select-list { background: #ffffff url(images/DropDownListIndicator16x16_Grey.png) no-repeat scroll right 3px top 50%; }
+
+textarea { height: 4rem; resize: none; }
+
+input[disabled='disabled'], select[disabled='disabled'] { background-color: #f0f0f0; color: #a0a0a0; cursor: default; }
+
+
+input[type=checkbox], input[type=checkbox]:hover, input[type=radio], input[type=radio]:hover { border: none; margin: 0.2rem 0.5rem 0.2rem 0; padding: 0; vertical-align: middle; }
+input[type=image] { border: none; margin: 0; padding: 0; }
+
+
+label { /*display: block;*/ padding: 0; text-align: left; }
+    label.inline { display: inline !important; }
+    label.inline-block { display: inline-block !important; }
+
+
+input[type=button], input[type=submit], input[type=reset], button { background-color: #4d90fe; background-image: -ms-linear-gradient(rgb(77, 144, 254), rgb(71, 135, 237)); background-image: -moz-linear-gradient(center top, #4d90fe, #4787ed); background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed); border: 1px solid #3079ed; color: #ffffff; cursor: pointer; font-size: 1.3rem; line-height: normal; overflow: hidden; padding: 0.3rem 0.6rem; text-shadow: 0 -1px rgba(51,0,0,.35); /*text-shadow:0px 1px rgba(0,0,0,0.1);*/ transition: all 0.3s ease 0s; text-transform: none; margin: 0.2rem; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px; }
+    input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover { background-color: #357ae8; background-image: -ms-linear-gradient(rgb(77, 144, 254), rgb(53, 122, 232)); background-image: -moz-linear-gradient(center top, #4d90fe, #357ae8); background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8); border: 1px solid #2f5bb7; box-shadow: 0px 1px 1px rgba(0,0,0,0.1); text-shadow: 0 -1px rgba(51,0,0,0.3); transition: all 0s ease 0s; }
+    input[type=button]:disabled, input[type=submit]:disabled, input[type=reset]:disabled, button:disabled { cursor: default; color: #999999; }
+
+    input[type=button].cancel, input[type=submit].cancel, input[type=reset].cancel, button.cancel { background-color: #d14836 !important; background-image: -ms-linear-gradient(rgb(221, 75, 57), rgb(209, 72, 54)) !important; background-image: -moz-linear-gradient(center top, #dd4b39, #d14836) !important; background-image: -webkit-linear-gradient(top, #dd4b39, #d14836) !important; border: 1px solid #c53727 !important; }
+        input[type=button].cancel:hover, input[type=submit].cancel:hover, input[type=reset].cancel:hover, button.cancel:hover { background-color: #c53727 !important; background-image: -ms-linear-gradient(rgb(221, 75, 57), rgb(197, 55, 39)) !important; background-image: -moz-linear-gradient(center top, #dd4b39, #c53727) !important; background-image: -webkit-linear-gradient(top, #dd4b39, #c53727) !important; border: 1px solid #b0281a !important; box-shadow: 0px 1px 1px rgba(0,0,0,0.2) !important; }
+
+    input[type=button].no-backgroud, input[type=submit].no-backgroud, input[type=reset].no-backgroud, button.no-backgroud { background-color: transparent !important; border: 1px solid #e0e0e0 !important; color: #000000 !important; background-image: none !important; text-shadow: initial; }
+        input[type=button].no-backgroud:hover, input[type=submit].no-backgroud:hover, input[type=reset].no-backgroud:hover, button.no-backgroud:hover { background-color: #e0e0e0 !important; }
+    input[type=button].save-cancel, input[type=submit].save-cancel, input[type=reset].save-cancel, button.save-cancel { width: 7rem; }
+    button.load-more { width: 11rem; }
+    input[type=button].stretch, input[type=submit].stretch, input[type=reset].stretch, button.stretch { margin: 0; width: 100%; }
+
+.button-inline-checkbox { display: inline-block; margin: 0 0 0 0.4rem; font-size: 0.8rem; vertical-align: middle; }
+    .button-inline-checkbox input[type=checkbox] { margin: 0 0.2rem 0 0; }
+
+.inputfile { width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; }
+.inputfile + label { display: block; font-size: 1.25rem; /* 20px */ font-weight: 700; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; overflow: hidden; padding: 0.2rem 1.25rem 0.4rem 35px; border-bottom: 0.2rem solid #dddddd; /* 10px 20px */ background: transparent url(images/buttons/Upload24x24_Grey.png) no-repeat scroll 2px 0; }
+    .inputfile + label:hover { border-bottom: 0.2rem solid #cccccc; background: transparent url(images/buttons/Upload24x24_Blue.png) no-repeat scroll 2px 0; }
+.inputfile:focus + label,
+.inputfile.has-focus + label { outline: 1px dotted #000; outline: -webkit-focus-ring-color auto 5px; }
+.inputfile + label * { /* pointer-events: none; */ /* in case of FastClick lib use */ }
+.inputfile + label svg { width: 1em; height: 1em; vertical-align: middle; fill: currentColor; margin-top: -0.25em; /* 4px */ margin-right: 0.25em; /* 4px */ }
+
+div.form_section_separator { border-bottom: 0.1rem solid #4d90fe; font-size: 1.2rem; text-align: left; color: #003366; font-variant: small-caps; margin: 1rem 0; padding: 0 0 0 1rem; }

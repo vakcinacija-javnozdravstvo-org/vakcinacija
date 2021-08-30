@@ -1,0 +1,56 @@
+﻿/* ADD, EDIT, REMOVE TABLE BUTTONS
+----------------------------------------------------------*/
+.button-base-16x16 { background: transparent url(images/buttons/Sprite.png) no-repeat scroll 0 0; cursor: pointer; display: inline-block; height: 16px; width: 16px; vertical-align: middle; margin: 0 0.2rem; }
+
+.button-add-16x16 { background-position: 0 -300px; }
+    .button-add-16x16:hover { background-position: 0 -330px; }
+.button-cancel-16x16 { background-position: 0 -120px; }
+    .button-cancel-16x16:hover { background-position: 0 -150px; }
+.button-close-16x16 { background: transparent url(images/buttons/Close16x16_Grey.png) no-repeat scroll 0 0; }
+    .button-close-16x16:hover { background: transparent url(images/buttons/Close16x16_Red.png) no-repeat scroll 0 0; }
+.button-delete-16x16 { background: transparent url(images/buttons/TrashCan16x16_Grey.png) no-repeat scroll 0 0; }
+    .button-delete-16x16:hover { background: transparent url(images/buttons/TrashCan16x16_Red.png) no-repeat scroll 0 0; }
+.button-details-16x16 { background-position: 0 -240px; }
+    .button-details-16x16:hover { background-position: 0 -270px; }
+.button-edit-16x16 { background-position: 0 -180px; }
+    .button-edit-16x16:hover { background-position: 0 -210px; }
+.button-find-16x16 { background: transparent url(images/buttons/Find16x16_Grey.png) no-repeat scroll 0 0; }
+    .button-find-16x16:hover { background: transparent url(images/buttons/Find16x16_Blue.png) no-repeat scroll 0 0; }
+.button-filter-16x16 { background: transparent url(images/buttons/Filter16x16_Grey.png) no-repeat scroll 0 0; }
+    .button-filter-16x16:hover { background: transparent url(images/buttons/Filter16x16_Blue.png) no-repeat scroll 0 0; }
+.button-minus-16x16 { background: transparent url(images/buttons/Minus16x16_Grey.png) no-repeat scroll 0 0; }
+    .button-minus-16x16:hover { background: transparent url(images/buttons/Minus16x16_Blue.png) no-repeat scroll 0 0; }
+.button-remove-16x16 { background: transparent url(images/buttons/Remove16x16_Grey.png) no-repeat scroll 0 0; }
+    .button-remove-16x16:hover { background: transparent url(images/buttons/Remove16x16_Blue.png) no-repeat scroll 0 0; }
+
+
+.button-base-24x24 { background: transparent url(images/buttons/Sprite.png) no-repeat scroll 0 0; cursor: pointer; display: inline-block; height: 24px; width: 24px; vertical-align: middle; margin: 0; }
+
+.button-add-24x24 { background-position: -30px -390px; }
+    .button-add-24x24:hover { background-position: -30px -420px; }
+.button-add-document-24x24 { background: transparent url(images/buttons/DocumentAdd24x24_Grey.png) no-repeat scroll 0 0; }
+    .button-add-document-24x24:hover { background: transparent url(images/buttons/DocumentAdd24x24_Blue.png) no-repeat scroll 0 0; }
+.button-cancel-24x24 { background-position: -30px -120px; }
+    .button-cancel-24x24:hover { background-position: -30px -150px; }
+.button-close-24x24 { background-position: -30px -120px; }
+    .button-close-24x24:hover { background-position: -30px -150px; }
+.button-delete-24x24 { background: transparent url(images/buttons/TrashCan24x24_Grey.png) no-repeat scroll 0 0; }
+    .button-delete-24x24:hover { background: transparent url(images/buttons/TrashCan24x24_Red.png) no-repeat scroll 0 0; }
+.button-details-24x24 { background-position: -30px -240px; }
+    .button-details-24x24:hover { background-position: -30px -270px; }
+.button-edit-24x24 { background-position: -30px -180px; }
+    .button-edit-24x24:hover { background-position: -30px -210px; }
+.button-log-off-24x24 { background: transparent url(images/buttons/Sprite.png) no-repeat scroll -30px -330px; }
+    .button-log-off-24x24:hover { background: transparent url(images/buttons/Sprite.png) no-repeat scroll -30px -330px; }
+.button-return-24x24 { background: transparent url(images/buttons/Return24x24_Grey.png) no-repeat scroll 0 0; }
+    .button-return-24x24:hover { background: transparent url(images/buttons/Return24x24_Blue.png) no-repeat scroll 0 0; }
+.button-save-24x24 { background-position: -30px -570px; }
+    .button-save-24x24:hover { background-position: -30px -600px; }
+.button-hidden-menu-24x24 { background: transparent url(images/buttons/HiddenMenu24x24_White.png) no-repeat scroll 0 0; }
+.button-calendar-24x24, .button-calendar-24x24-disabled { background: transparent url(images/buttons/Calendar24x24_Grey.png) no-repeat scroll 0 0; }
+    .button-calendar-24x24:hover { background: transparent url(images/buttons/Calendar24x24_Blue.png) no-repeat scroll 0 0; }
+
+.button-calendar-24x24-disabled { cursor: default; }
+
+button.button-add-entity { }
+    button.button-add-entity > span { background: url(images/buttons/Add20x20_White.png) no-repeat scroll 0 50%; display: block; padding-left: 30px; }
