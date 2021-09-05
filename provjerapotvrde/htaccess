@@ -1,7 +1,7 @@
 #remove html file extension https://example.com/page.html
 # to https://example.com/page
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^(www\.)vakcinacija-javnozdravstvo-org.github.io [NC]
+RewriteCond %{HTTP_HOST} ^vakcinacija-javnozdravstvo-org.github.io [NC]
 RewriteRule ^(.*)$ https://vakcinacija.javnozdravstvors.org/$1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
