@@ -1,0 +1,152 @@
+﻿/* SEARCH PANEL
+----------------------------------------------------------*/
+fieldset.search-panel { border: 1px solid #dddddd; padding: 0.2rem; text-align: left; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px; }
+    fieldset.search-panel > legend { font-weight: bold; padding: 0.2rem 0.4rem; text-align: left; }
+    fieldset.search-panel > div.search-label { font-weight: bold; padding: 0.7rem 0.2rem 0 0.5rem; text-align: left; }
+    fieldset.search-panel > div.search-field { padding: 0.3rem; }
+
+    fieldset.search-panel > div.search-button-wrapper { margin: 1rem 0.2rem 0.2rem 0.2rem; text-align: center; }
+        fieldset.search-panel > div.search-button-wrapper > button.button-search { padding: 0.4rem; display: block; margin: 0; width: 100%; }
+            fieldset.search-panel > div.search-button-wrapper > button.button-search > span { background: url(images/buttons/Find16x16_White.png) no-repeat scroll 0 0.2rem; display: block; padding-left: 24px; }
+        fieldset.search-panel > div.search-button-wrapper > button.button-cancel-search { padding: 0.4rem; display: block; margin: 0; width: 100%; }
+            fieldset.search-panel > div.search-button-wrapper > button.button-cancel-search > span { background: url(images/buttons/Cancel16x16_White.png) no-repeat scroll 0 0.2rem; display: block; padding-left: 24px; }
+
+div.item-list-with-search-wrapper { width: 75%; float: left; padding-right: 0.5rem; }
+div.search-wrapper { width: 25%; float: left; }
+
+@media all and (max-width:768px) {
+    div.item-list-with-search-wrapper { width: 100%; }
+    div.search-wrapper { width: 100%; margin-top: 1.5rem; }
+}
+
+div.item-wrapper { background-color: white; margin: 0.5rem; padding: 0.5rem; border: 1px solid #f0f0f0; }
+    div.item-wrapper > div.item-action-buttons { float: left; margin: 0.5rem 1rem; }
+    div.item-wrapper > div.item-title { float: left; color: #003366; font-size: 1.3rem; font-weight: bold; margin: 0.5rem 1rem; text-align: left; }
+    div.item-wrapper > div.item-content { font-size: 1rem; margin: 0.5rem 1rem; text-align: left; }
+
+div.child-item-wrapper { /*margin: 1rem 0.5rem;*/ background-color: white; margin: 0.5rem; padding: 0.5rem; border: 1px solid #f0f0f0; }
+    div.child-item-wrapper div.child-item-action-buttons { float: left; margin: 0.5rem 1rem; }
+    div.child-item-wrapper div.child-item-title { float: left; color: #003366; font-size: 1.3rem; font-weight: bold; margin: 0.5rem 1rem; text-align: left; }
+    div.child-item-wrapper div.child-item-content { font-size: 1rem; margin: 0.5rem 1rem; text-align: left; }
+div.child-item-separator-horizontal { border: solid 1px #bbbbbb; height: 1px; margin: 1rem 0 0.5rem 0; }
+
+div.warning-backgrund { background-color: #ffe0e0; }
+
+/*h6.toggle-trigger > a, h6.toggle-trigger-popup > a { color: #003366; cursor: pointer; font-weight: bold; text-align: left; text-decoration: none; }*/
+
+div.legal-person-edit-form { max-width: 600px; }
+div.branch-office-edit-form { max-width: 600px; }
+div.contract-edit-form { max-width: 700px; }
+div.sample-edit-form { max-width: 500px; }
+
+div.search-info { color: red; font-size: 1rem; padding: 0.2rem 0.4rem; text-align: left; }
+
+div.field-explanation { font-size: 0.7rem; padding: 0.2rem 0.4rem; text-align: left; }
+
+div.login-register-link { text-align: center; margin: 1rem; }
+
+
+
+/*div.content-container { padding: 1em; position: relative; }
+div.side-container { padding: 10px 10px 10px 10px; }
+    div.side-container > input[type=button], div.side-container > input[type=reset], div.side-container > button { font-size: 110%; font-weight: bold; margin: 5px 0px; padding: 3px 5px; text-align: center; width: 100%; }
+
+button.button-add-user span { background: url(images/buttons/AddUser24x24.png) no-repeat scroll 0 50%; display: block; padding: 0.5em 0; }*/
+
+
+/*div.paginator { padding: 5px; position: relative; }
+    div.paginator div.results-info { position: absolute; top: 6px; left: 6px; }
+    div.paginator a { display: inline-block; margin: 1px 3px; }
+
+div.latest-report-wrapper { border-bottom: solid 1px #dddddd; margin: 0.3em; }
+    div.latest-report-wrapper > div.title > h6 { margin-bottom: 0.4em; }
+    div.latest-report-wrapper > div.update-info { font-size: 0.9em; }
+    div.latest-report-wrapper > div.updated-user-info { font-size: 0.8em; text-align: left; }
+
+div.form-wrapper { margin: 1em auto; width: 800px; }
+
+div.load-more-button-wrapper { text-align: center; }*/
+
+/*div.md-container { background: transparent url(images/TransparentBackground.png) repeat scroll 0 0; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 50; }
+div.md-wrapper { background: #fff; border: solid 1px #909090; padding: 5px; position: relative; }
+div.md-caption { border-bottom: solid 1px #909090; cursor: move; font-size: 120%; line-height: 110%; padding: 5px; position: relative; text-align: left; }
+    div.md-caption a.md-button-close { position: absolute; top: 0.1em; right: 0.1em; }
+        div.md-caption a.md-button-close:hover { cursor: pointer; }
+div.md-content { font-size: 100%; overflow: auto; padding: 10px 10px; text-align: left; }
+div.md-buttons { border-top: solid 1px #dddddd; overflow: auto; padding: 5px 5px 0px 5px; text-align: right; }
+    div.md-buttons input { margin: 0px 3px !important; }*/
+
+div.md-container { background: transparent url(images/TransparentBackground.png) repeat scroll 0 0; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 50; }
+    div.md-container > div.md-wrapper { border: solid 0.1rem blue; background-color: #fdfdfd; }
+        div.md-container > div.md-wrapper > div.md-caption { cursor: move; font-size: 1.2rem; padding: 0.3rem; text-align: left; margin: 0 !important; position: relative; }
+            div.md-container > div.md-wrapper > div.md-caption > a.md-button-close { position: absolute; top: 0.3rem; right: 0.3rem; }
+                div.md-container > div.md-wrapper > div.md-caption > a.md-button-close:hover { cursor: pointer; }
+        div.md-container > div.md-wrapper > div.md-content { font-size: 1rem; overflow: auto; padding: 0.5rem; text-align: left; }
+        div.md-container > div.md-wrapper > div.md-buttons { overflow: auto; padding: 0.3rem; text-align: center; margin: 0 !important; }
+            div.md-container > div.md-wrapper > div.md-buttons > input { margin: 0 0.2rem !important; }
+
+@media all and (max-width:768px) {
+    div.md-container > div.md-wrapper { width: 100% !important; top: 2.2rem !important; left: 0 !important; }
+}
+/*div.mb-container { background: transparent url(images/TransparentBackground.png) repeat scroll 0 0; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 60; }
+    div.mb-container > div.mb-wrapper { background: #fff; border: solid 1px #909090; position: relative; }
+        div.mb-container > div.mb-wrapper > div.mb-caption { border-bottom: solid 0px #909090; cursor: move; font-size: 120%; line-height: 110%; padding: 5px 5px 5px 30px; position: relative; text-align: left; }
+            div.mb-container > div.mb-wrapper > div.mb-caption > a.mb-button-close { position: absolute; top: 6px; right: 6px; }
+                div.mb-container > div.mb-wrapper > div.mb-caption > a.mb-button-close:hover { cursor: pointer; }
+
+        div.mb-container > div.mb-wrapper > div.error-message { background-color: red; }
+        div.mb-container > div.mb-wrapper > div.information-message { background-color: blue; }
+        div.mb-container > div.mb-wrapper > div.warning-message { background-color: orange; }
+
+        div.mb-container > div.mb-wrapper > div.mb-content { font-size: 100%; overflow: auto; padding: 10px; text-align: justify; }
+            div.mb-container > div.mb-wrapper > div.mb-content > strong.warning { color: Red; display: block; font-size: 110%; padding-top: 10px; text-align: center; }
+
+        div.mb-container > div.mb-wrapper > div.mb-buttons { border-top: solid 1px #909090; overflow: auto; padding: 5px; text-align: center; }
+            div.mb-container > div.mb-wrapper > div.mb-buttons > input { margin: 0px 3px !important; }*/
+
+div.mb-container { background: transparent url(images/TransparentBackground.png) repeat scroll 0 0; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 60; }
+    div.mb-container > div.error-message { background-color: red; }
+    div.mb-container > div.information-message { background-color: blue; }
+    div.mb-container > div.warning-message { background-color: orange; }
+    div.mb-container > div.mb-wrapper { position: relative; padding: 0.1rem 0.1rem 0.1rem 4rem; }
+        div.mb-container > div.mb-wrapper > div.mb-helper-wrapper { background-color: white; }
+            div.mb-container > div.mb-wrapper > div.mb-helper-wrapper > div.mb-caption { /*border-bottom: solid 0px #909090;*/ cursor: move; font-size: 1.2rem; padding: 0.3rem; text-align: center; margin: 0 !important; }
+            div.mb-container > div.mb-wrapper > div.mb-helper-wrapper > div.mb-content { font-size: 1rem; overflow: auto; padding: 0.5rem; text-align: left; margin: 0 !important; }
+                div.mb-container > div.mb-wrapper > div.mb-helper-wrapper > div.mb-content > strong.warning { }
+            div.mb-container > div.mb-wrapper > div.mb-helper-wrapper > div.mb-buttons { /*border-top: solid 0px #909090;*/ overflow: auto; padding: 0.3rem; text-align: center; margin: 0 !important; }
+                div.mb-container > div.mb-wrapper > div.mb-helper-wrapper > div.mb-buttons > input { margin: 0 0.2rem !important; }
+
+@media all and (max-width:768px) {
+    div.mb-container > div.mb-wrapper { width: 100% !important; top: 2.2rem !important; left: 0 !important; }
+}
+
+
+
+
+.order-gallery { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
+
+
+.order-gallery-item { position: relative; display: inline-block; width: 100%; overflow: hidden; margin-bottom: 1em; }
+
+@media all and (min-width: 768px) {
+    .order-gallery { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
+}
+
+/*@media (min-width: 768px) {
+    .order-gallery {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}*/
+
+div.vaccination-acknowledgment {
+	padding: 20px 20%;
+	margin: 0 0 3rem 0;
+}
+
+@media (max-width: 768px) {
+	div.vaccination-acknowledgment {
+		padding: 20px 10%;
+	}
+}

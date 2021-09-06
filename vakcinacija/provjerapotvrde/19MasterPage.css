@@ -1,0 +1,53 @@
+﻿header { background: #4d90fe /*#000044*/; color: #ffffff; height: 2.2rem; text-shadow: 0px -1px rgba(51,0,0,.35); position: fixed; top: 0; left: 0; right: 0; z-index: 21; }
+    header > div.menu-toggler { display: none; float: left; position: relative; top: 50%; margin-top: -12px; padding-left: 0.5rem; }
+    header > div.app-title { float: left; font-size: 1.6rem; font-variant: small-caps; margin: 0 0.2rem; position: relative; top: 50%; margin-top: -0.9rem; padding-left: 0.5rem; }
+    header > div.app-title > a { font-size: 1.6rem; font-variant: small-caps; color: #ffffff; }
+    header > div.user-info { float: right; font-size: 1rem; margin: 0 0.2rem; padding: 0.2rem; position: relative; top: 50%; margin-top: -0.7rem; }
+    header > div.change-user-data:hover { background-color: #4787ed; box-shadow: 0px 0px 4px 0px #999999; transition: all 0s ease 0s; cursor: pointer; }
+    header > div.logoff { float: right; margin: 0 0.2rem; position: relative; top: 50%; margin-top: -12px; }
+
+div.menu-wrapper { background-color: #fdfdfd; width: 14rem; position: fixed; top: 2.2rem; left: 0; bottom: 1.8rem; border-left: 3px solid #dddddd; z-index: 20; }
+    div.menu-wrapper > ul > li { display: block; border-left: 3px solid #dddddd; padding: 0.2rem; margin-left: -3px; transition: all 0.3s ease 0s; }
+        div.menu-wrapper > ul > li.menu-item:hover { border-left: 3px solid #4d90fe; background-color: #e0e0e0; padding-left: 1rem; }
+        div.menu-wrapper > ul > li > a { color: #003366; display: block; padding: 0.2rem 0.5rem; font-size: 1.2rem; font-weight: bold; text-decoration: none; text-align: left; }
+        div.menu-wrapper > ul > li.label { cursor: default; padding: 1rem 0.5rem 0.2rem 0.5rem; }
+div.menu-visibility-helper { }
+
+div.alert-window { position: fixed; top: 2.2rem; right: 0; bottom: 0; width: 1.3rem; background-color: #fff5f5; text-align: center; padding: 1rem 0; overflow: hidden; z-index: 20; }
+    div.alert-window > div.alert-title { position: absolute; top: 0; left: 0; bottom: 0; width: 1.3rem; padding: 1rem 0rem; background-color: #ffcccc; cursor: pointer; font-weight: bold; }
+    div.alert-window > div.alert-content { position: absolute; top: 0; left: 1.4rem; bottom: 0; width: 18.5rem; overflow: auto; }
+        div.alert-window > div.alert-content > div.alert-section-title { margin: 1rem 0.2rem; font-size: 1.2rem; font-weight: bold; }
+        div.alert-window > div.alert-content > div.alert-item { margin: 0.4rem 0.2rem; }
+
+div.alert-window-hover-mobile-fix { width: 20rem; }
+     div.alert-window-hover-mobile-fix > div.alert-title { display: block; }
+     div.alert-window-hover-mobile-fix > div.alert-content { display: block; }
+
+div.pjax-loading-indicator { padding: 0.5rem; position: fixed; top: 2.2rem; left: 0; right: 0; z-index: 30; }
+    div.pjax-loading-indicator > div.loading-message { width: 15rem; margin: 0 auto; padding: 0.5rem; background-color: darkorange; color: white; font-size: 1.2rem; text-align: center; }
+
+div.content-wrapper { padding: 2.7rem 1.5rem 2.3rem 14.5rem; position: relative; min-height: 100%; margin-bottom: -1.8rem; background: url(./images/Zgrada_Latn_700x372_Background.png) no-repeat fixed 50% 50%; }
+footer { background-color: #fdfdfd; border-top: 0px solid #dddddd; color: #999999; padding: 0.2rem; text-align: center; z-index: 21; box-sizing: border-box; }
+    footer.one-line { height: 1.8rem; display: block; }
+    footer.two-lines { height: 2.8rem; display: none; }
+
+div.breadcrumb { text-align: left; padding: 0 0 1rem 0; }
+    div.breadcrumb img { margin: 0 0.4em; }
+    div.breadcrumb a { }
+
+@media all and (max-width:768px) {
+    header > div.app-title { }
+    header > div.menu-toggler { display: block; }
+
+    div.menu-wrapper { display: none; bottom: 2.8rem; }
+    div.menu-visibility-helper { display: block; }
+
+    div.content-wrapper { padding-left: 10px; margin-bottom: -2.8rem; padding-bottom: 3.3rem; background: url(./images/Zgrada_Latn_350x186_Background.png) no-repeat fixed 50% 50%; }
+
+    footer.one-line { display: none; }
+    footer.two-lines { display: block; }
+}
+
+@media all and (max-width:400px) {
+    header > div.user-info { display: none; }
+}
